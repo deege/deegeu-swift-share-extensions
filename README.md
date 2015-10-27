@@ -1,5 +1,3 @@
-# deegeu-swift-share-extensions
-
 # Building a iOS 9 Share Extension with Swift 2.0
 
 The purpose of this repository is to supplement the "Building a iOS 9 Share Extension with Swift 2.0" video with code, and to provide a simple starting point for building Share Extensions for yous apps.
