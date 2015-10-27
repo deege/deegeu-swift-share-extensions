@@ -1,0 +1,475 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		9972F70E1BDEC5A6006A5670 /* ColorSelectionViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9972F70D1BDEC5A6006A5670 /* ColorSelectionViewController.swift */; };
+		9991F5D01BDEB3DB005C7BF6 /* ShareViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9991F5CF1BDEB3DB005C7BF6 /* ShareViewController.swift */; };
+		9991F5D31BDEB3DB005C7BF6 /* MainInterface.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 9991F5D11BDEB3DB005C7BF6 /* MainInterface.storyboard */; };
+		9991F5D71BDEB3DB005C7BF6 /* deegeu-swift-share-extensions-image-share.appex in Embed App Extensions */ = {isa = PBXBuildFile; fileRef = 9991F5CD1BDEB3DB005C7BF6 /* deegeu-swift-share-extensions-image-share.appex */; settings = {ATTRIBUTES = (RemoveHeadersOnCopy, ); }; };
+		999E5D781BDADB040042AB22 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 999E5D771BDADB040042AB22 /* AppDelegate.swift */; };
+		999E5D7A1BDADB040042AB22 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 999E5D791BDADB040042AB22 /* ViewController.swift */; };
+		999E5D7D1BDADB040042AB22 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 999E5D7B1BDADB040042AB22 /* Main.storyboard */; };
+		999E5D7F1BDADB040042AB22 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 999E5D7E1BDADB040042AB22 /* Assets.xcassets */; };
+		999E5D821BDADB040042AB22 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 999E5D801BDADB040042AB22 /* LaunchScreen.storyboard */; };
+		999E5D8A1BDADB9B0042AB22 /* RedViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 999E5D891BDADB9B0042AB22 /* RedViewController.swift */; };
+		999E5D8C1BDADBA60042AB22 /* BlueViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 999E5D8B1BDADBA60042AB22 /* BlueViewController.swift */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		9991F5D51BDEB3DB005C7BF6 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 999E5D6C1BDADB040042AB22 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 9991F5CC1BDEB3DB005C7BF6;
+			remoteInfo = "deegeu-swift-share-extensions-image-share";
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXCopyFilesBuildPhase section */
+		9991F5DB1BDEB3DB005C7BF6 /* Embed App Extensions */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = "";
+			dstSubfolderSpec = 13;
+			files = (
+				9991F5D71BDEB3DB005C7BF6 /* deegeu-swift-share-extensions-image-share.appex in Embed App Extensions */,
+			);
+			name = "Embed App Extensions";
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXCopyFilesBuildPhase section */
+
+/* Begin PBXFileReference section */
+		9972F70D1BDEC5A6006A5670 /* ColorSelectionViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ColorSelectionViewController.swift; sourceTree = "<group>"; };
+		9991F5CD1BDEB3DB005C7BF6 /* deegeu-swift-share-extensions-image-share.appex */ = {isa = PBXFileReference; explicitFileType = "wrapper.app-extension"; includeInIndex = 0; path = "deegeu-swift-share-extensions-image-share.appex"; sourceTree = BUILT_PRODUCTS_DIR; };
+		9991F5CF1BDEB3DB005C7BF6 /* ShareViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ShareViewController.swift; sourceTree = "<group>"; };
+		9991F5D21BDEB3DB005C7BF6 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/MainInterface.storyboard; sourceTree = "<group>"; };
+		9991F5D41BDEB3DB005C7BF6 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		9991F5DC1BDEB4EE005C7BF6 /* deegeu-swift-share-extensions-image-share.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.xml; path = "deegeu-swift-share-extensions-image-share.entitlements"; sourceTree = "<group>"; };
+		9991F5DD1BDEB51D005C7BF6 /* deegeu-swift-share-extensions.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.xml; path = "deegeu-swift-share-extensions.entitlements"; sourceTree = "<group>"; };
+		999E5D741BDADB040042AB22 /* deegeu-swift-share-extensions.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "deegeu-swift-share-extensions.app"; sourceTree = BUILT_PRODUCTS_DIR; };
+		999E5D771BDADB040042AB22 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		999E5D791BDADB040042AB22 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		999E5D7C1BDADB040042AB22 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		999E5D7E1BDADB040042AB22 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		999E5D811BDADB040042AB22 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		999E5D831BDADB040042AB22 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		999E5D891BDADB9B0042AB22 /* RedViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = RedViewController.swift; sourceTree = "<group>"; };
+		999E5D8B1BDADBA60042AB22 /* BlueViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = BlueViewController.swift; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		9991F5CA1BDEB3DB005C7BF6 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		999E5D711BDADB040042AB22 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		9991F5CE1BDEB3DB005C7BF6 /* deegeu-swift-share-extensions-image-share */ = {
+			isa = PBXGroup;
+			children = (
+				9991F5DC1BDEB4EE005C7BF6 /* deegeu-swift-share-extensions-image-share.entitlements */,
+				9991F5CF1BDEB3DB005C7BF6 /* ShareViewController.swift */,
+				9991F5D11BDEB3DB005C7BF6 /* MainInterface.storyboard */,
+				9991F5D41BDEB3DB005C7BF6 /* Info.plist */,
+				9972F70D1BDEC5A6006A5670 /* ColorSelectionViewController.swift */,
+			);
+			path = "deegeu-swift-share-extensions-image-share";
+			sourceTree = "<group>";
+		};
+		999E5D6B1BDADB040042AB22 = {
+			isa = PBXGroup;
+			children = (
+				999E5D761BDADB040042AB22 /* deegeu-swift-share-extensions */,
+				9991F5CE1BDEB3DB005C7BF6 /* deegeu-swift-share-extensions-image-share */,
+				999E5D751BDADB040042AB22 /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		999E5D751BDADB040042AB22 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				999E5D741BDADB040042AB22 /* deegeu-swift-share-extensions.app */,
+				9991F5CD1BDEB3DB005C7BF6 /* deegeu-swift-share-extensions-image-share.appex */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		999E5D761BDADB040042AB22 /* deegeu-swift-share-extensions */ = {
+			isa = PBXGroup;
+			children = (
+				9991F5DD1BDEB51D005C7BF6 /* deegeu-swift-share-extensions.entitlements */,
+				999E5D771BDADB040042AB22 /* AppDelegate.swift */,
+				999E5D791BDADB040042AB22 /* ViewController.swift */,
+				999E5D7B1BDADB040042AB22 /* Main.storyboard */,
+				999E5D7E1BDADB040042AB22 /* Assets.xcassets */,
+				999E5D801BDADB040042AB22 /* LaunchScreen.storyboard */,
+				999E5D831BDADB040042AB22 /* Info.plist */,
+				999E5D891BDADB9B0042AB22 /* RedViewController.swift */,
+				999E5D8B1BDADBA60042AB22 /* BlueViewController.swift */,
+			);
+			path = "deegeu-swift-share-extensions";
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		9991F5CC1BDEB3DB005C7BF6 /* deegeu-swift-share-extensions-image-share */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 9991F5DA1BDEB3DB005C7BF6 /* Build configuration list for PBXNativeTarget "deegeu-swift-share-extensions-image-share" */;
+			buildPhases = (
+				9991F5C91BDEB3DB005C7BF6 /* Sources */,
+				9991F5CA1BDEB3DB005C7BF6 /* Frameworks */,
+				9991F5CB1BDEB3DB005C7BF6 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = "deegeu-swift-share-extensions-image-share";
+			productName = "deegeu-swift-share-extensions-image-share";
+			productReference = 9991F5CD1BDEB3DB005C7BF6 /* deegeu-swift-share-extensions-image-share.appex */;
+			productType = "com.apple.product-type.app-extension";
+		};
+		999E5D731BDADB040042AB22 /* deegeu-swift-share-extensions */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 999E5D861BDADB040042AB22 /* Build configuration list for PBXNativeTarget "deegeu-swift-share-extensions" */;
+			buildPhases = (
+				999E5D701BDADB040042AB22 /* Sources */,
+				999E5D711BDADB040042AB22 /* Frameworks */,
+				999E5D721BDADB040042AB22 /* Resources */,
+				9991F5DB1BDEB3DB005C7BF6 /* Embed App Extensions */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				9991F5D61BDEB3DB005C7BF6 /* PBXTargetDependency */,
+			);
+			name = "deegeu-swift-share-extensions";
+			productName = "deegeu-swift-share-extensions";
+			productReference = 999E5D741BDADB040042AB22 /* deegeu-swift-share-extensions.app */;
+			productType = "com.apple.product-type.application";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		999E5D6C1BDADB040042AB22 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastUpgradeCheck = 0700;
+				ORGANIZATIONNAME = "Daniel Spiess";
+				TargetAttributes = {
+					9991F5CC1BDEB3DB005C7BF6 = {
+						CreatedOnToolsVersion = 7.0;
+						DevelopmentTeam = W2LK2X63U8;
+						SystemCapabilities = {
+							com.apple.ApplicationGroups.iOS = {
+								enabled = 1;
+							};
+						};
+					};
+					999E5D731BDADB040042AB22 = {
+						CreatedOnToolsVersion = 7.0;
+						DevelopmentTeam = W2LK2X63U8;
+						SystemCapabilities = {
+							com.apple.ApplicationGroups.iOS = {
+								enabled = 1;
+							};
+						};
+					};
+				};
+			};
+			buildConfigurationList = 999E5D6F1BDADB040042AB22 /* Build configuration list for PBXProject "deegeu-swift-share-extensions" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = 999E5D6B1BDADB040042AB22;
+			productRefGroup = 999E5D751BDADB040042AB22 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				999E5D731BDADB040042AB22 /* deegeu-swift-share-extensions */,
+				9991F5CC1BDEB3DB005C7BF6 /* deegeu-swift-share-extensions-image-share */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		9991F5CB1BDEB3DB005C7BF6 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				9991F5D31BDEB3DB005C7BF6 /* MainInterface.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		999E5D721BDADB040042AB22 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				999E5D821BDADB040042AB22 /* LaunchScreen.storyboard in Resources */,
+				999E5D7F1BDADB040042AB22 /* Assets.xcassets in Resources */,
+				999E5D7D1BDADB040042AB22 /* Main.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		9991F5C91BDEB3DB005C7BF6 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				9991F5D01BDEB3DB005C7BF6 /* ShareViewController.swift in Sources */,
+				9972F70E1BDEC5A6006A5670 /* ColorSelectionViewController.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		999E5D701BDADB040042AB22 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				999E5D7A1BDADB040042AB22 /* ViewController.swift in Sources */,
+				999E5D8A1BDADB9B0042AB22 /* RedViewController.swift in Sources */,
+				999E5D8C1BDADBA60042AB22 /* BlueViewController.swift in Sources */,
+				999E5D781BDADB040042AB22 /* AppDelegate.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		9991F5D61BDEB3DB005C7BF6 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 9991F5CC1BDEB3DB005C7BF6 /* deegeu-swift-share-extensions-image-share */;
+			targetProxy = 9991F5D51BDEB3DB005C7BF6 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		9991F5D11BDEB3DB005C7BF6 /* MainInterface.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				9991F5D21BDEB3DB005C7BF6 /* Base */,
+			);
+			name = MainInterface.storyboard;
+			sourceTree = "<group>";
+		};
+		999E5D7B1BDADB040042AB22 /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				999E5D7C1BDADB040042AB22 /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		999E5D801BDADB040042AB22 /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				999E5D811BDADB040042AB22 /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		9991F5D81BDEB3DB005C7BF6 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CODE_SIGN_ENTITLEMENTS = "deegeu-swift-share-extensions-image-share/deegeu-swift-share-extensions-image-share.entitlements";
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				INFOPLIST_FILE = "deegeu-swift-share-extensions-image-share/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @executable_path/../../Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = "com.deegeu.deegeu-swift-share-extensions.deegeu-swift-share-extensions-image-share";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE = "";
+				SKIP_INSTALL = YES;
+			};
+			name = Debug;
+		};
+		9991F5D91BDEB3DB005C7BF6 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CODE_SIGN_ENTITLEMENTS = "deegeu-swift-share-extensions-image-share/deegeu-swift-share-extensions-image-share.entitlements";
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				INFOPLIST_FILE = "deegeu-swift-share-extensions-image-share/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @executable_path/../../Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = "com.deegeu.deegeu-swift-share-extensions.deegeu-swift-share-extensions-image-share";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE = "";
+				SKIP_INSTALL = YES;
+			};
+			name = Release;
+		};
+		999E5D841BDADB040042AB22 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
+				MTL_ENABLE_DEBUG_INFO = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		999E5D851BDADB040042AB22 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				SDKROOT = iphoneos;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		999E5D871BDADB040042AB22 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_ENTITLEMENTS = "deegeu-swift-share-extensions/deegeu-swift-share-extensions.entitlements";
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				EMBEDDED_CONTENT_CONTAINS_SWIFT = YES;
+				INFOPLIST_FILE = "deegeu-swift-share-extensions/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = "com.deegeu.deegeu-swift-share-extensions";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE = "";
+			};
+			name = Debug;
+		};
+		999E5D881BDADB040042AB22 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_ENTITLEMENTS = "deegeu-swift-share-extensions/deegeu-swift-share-extensions.entitlements";
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				EMBEDDED_CONTENT_CONTAINS_SWIFT = YES;
+				INFOPLIST_FILE = "deegeu-swift-share-extensions/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = "com.deegeu.deegeu-swift-share-extensions";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE = "";
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		9991F5DA1BDEB3DB005C7BF6 /* Build configuration list for PBXNativeTarget "deegeu-swift-share-extensions-image-share" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				9991F5D81BDEB3DB005C7BF6 /* Debug */,
+				9991F5D91BDEB3DB005C7BF6 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		999E5D6F1BDADB040042AB22 /* Build configuration list for PBXProject "deegeu-swift-share-extensions" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				999E5D841BDADB040042AB22 /* Debug */,
+				999E5D851BDADB040042AB22 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		999E5D861BDADB040042AB22 /* Build configuration list for PBXNativeTarget "deegeu-swift-share-extensions" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				999E5D871BDADB040042AB22 /* Debug */,
+				999E5D881BDADB040042AB22 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 999E5D6C1BDADB040042AB22 /* Project object */;
+}
