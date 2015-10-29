@@ -33,13 +33,14 @@ class ShareViewController: SLComposeServiceViewController, ColorSelectionViewCon
     // Called after the user selects an image from the photos
     override func didSelectPost() {
         // This is called after the user selects Post.
-        for extensionItem in extensionContext!.inputItems {
-            print(extensionItem)
-        }
-        
+        // Make sure we have a valid extension item
         if let content = extensionContext!.inputItems[0] as? NSExtensionItem {
             let contentType = kUTTypeImage as String
+            
+            // Verify the provider is valid
             if let contents = content.attachments as? [NSItemProvider] {
+                
+                // look for images
                 for attachment in contents {
                     if attachment.hasItemConformingToTypeIdentifier(contentType) {
                         attachment.loadItemForTypeIdentifier(contentType, options: nil) { data, error in
@@ -75,7 +76,8 @@ class ShareViewController: SLComposeServiceViewController, ColorSelectionViewCon
         return [colorConfigurationItem]
     }
     
-    // Builds a configuration item when we need it.
+    // Builds a configuration item when we need it. This one is for the "Color" 
+    // configuration item.
     lazy var colorConfigurationItem: SLComposeSheetConfigurationItem = {
         let item = SLComposeSheetConfigurationItem()
         item.title = "Color"
