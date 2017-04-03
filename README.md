@@ -4,7 +4,7 @@ The purpose of this repository is to supplement the "Building a iOS 9 Share Exte
 
 The “Building a iOS 9 Share Extension with Swift 2.0” video demonstrates sharing a photo from the photo album to your apps.
 
-The video uses Swift 2.0 and iOS 9
+The video uses Swift 3.1 and iOS 10.3 (updated 04-03-2017)
 
 You can find more iOS videos on [the DeegeU channel](http://www.deegeu.com/subscribe)
 
@@ -12,7 +12,7 @@ You can find more iOS videos on [the DeegeU channel](http://www.deegeu.com/subsc
 
 The code is a self contained Swift project that can be loaded into XCode.
 
-This code is written and compiled for Swift 2.0.
+This code is written and compiled for Swift 3.1.
 
 ## Getting help
 
