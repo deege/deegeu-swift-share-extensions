@@ -17,9 +17,9 @@ class BlueViewController: UIViewController {
     // image
     override func viewDidLoad() {
         super.viewDidLoad()
-        if let prefs = NSUserDefaults(suiteName: suiteName) {
-            if let imageData = prefs.objectForKey(blueDefaultKey) as? NSData {
-                dispatch_async(dispatch_get_main_queue(), { () -> Void in
+        if let prefs = UserDefaults(suiteName: suiteName) {
+            if let imageData = prefs.object(forKey: blueDefaultKey) as? Data {
+                DispatchQueue.main.async(execute: { () -> Void in
                     self.imageView.image = UIImage(data: imageData)
                 })
             }
