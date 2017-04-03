@@ -43,11 +43,11 @@ class ShareViewController: SLComposeServiceViewController, ColorSelectionViewCon
                 // look for images
                 for attachment in contents {
                     if attachment.hasItemConformingToTypeIdentifier(contentType) {
-                        attachment.loadItemForTypeIdentifier(contentType, options: nil) { data, error in
+                        attachment.loadItem(forTypeIdentifier: contentType, options: nil) { data, error in
                             
-                            let url = data as! NSURL
+                            let url = data as! URL
                             if (!self.selectedColorName.isEmpty) {
-                                if let imageData = NSData(contentsOfURL: url) {
+                                if let imageData = try? Data(contentsOf: url) {
                                     if (self.selectedColorName == "Default") {
                                         self.saveImage(self.redDefaultKey, imageData: imageData)
                                         self.saveImage(self.blueDefaultKey, imageData: imageData)
@@ -66,12 +66,12 @@ class ShareViewController: SLComposeServiceViewController, ColorSelectionViewCon
         }
         
         // Inform the host that we're done, so it un-blocks its UI.
-        self.extensionContext!.completeRequestReturningItems([], completionHandler: nil)
+        self.extensionContext!.completeRequest(returningItems: [], completionHandler: nil)
     }
 
     // Returns an array of colors. In our case it's red, blue or default. These are built configuration
     // items, not just the string.
-    override func configurationItems() -> [AnyObject]! {
+    override func configurationItems() -> [Any]! {
         // To add configuration options via table cells at the bottom of the sheet, return an array of SLComposeSheetConfigurationItem here.
         return [colorConfigurationItem]
     }
@@ -80,15 +80,15 @@ class ShareViewController: SLComposeServiceViewController, ColorSelectionViewCon
     // configuration item.
     lazy var colorConfigurationItem: SLComposeSheetConfigurationItem = {
         let item = SLComposeSheetConfigurationItem()
-        item.title = "Color"
-        item.value = self.selectedColorName
-        item.tapHandler = self.showColorSelection
-        return item
+        item?.title = "Color"
+        item?.value = self.selectedColorName
+        item?.tapHandler = self.showColorSelection
+        return item!
     }()
     
     // Shows a view controller when the user selects a configuration item
     func showColorSelection() {
-        let controller = ColorSelectionViewController(style: .Plain)
+        let controller = ColorSelectionViewController(style: .plain)
         controller.selectedColorName = colorConfigurationItem.value
         controller.delegate = self
         pushConfigurationViewController(controller)
@@ -96,17 +96,17 @@ class ShareViewController: SLComposeServiceViewController, ColorSelectionViewCon
     
     // One the user selects a configuration item (color), we remember the value and pop
     // the color selection view controller
-    func colorSelection(sender: ColorSelectionViewController, selectedValue: String) {
+    func colorSelection(_ sender: ColorSelectionViewController, selectedValue: String) {
         colorConfigurationItem.value = selectedValue
         selectedColorName = selectedValue
         popConfigurationViewController()
     }
     
     // Saves an image to user defaults.
-    func saveImage(color: String, imageData: NSData) {
-        if let prefs = NSUserDefaults(suiteName: suiteName) {
-            prefs.removeObjectForKey(color)
-            prefs.setObject(imageData, forKey: color)
+    func saveImage(_ color: String, imageData: Data) {
+        if let prefs = UserDefaults(suiteName: suiteName) {
+            prefs.removeObject(forKey: color)
+            prefs.set(imageData, forKey: color)
         }
     }
 

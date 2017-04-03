@@ -10,8 +10,8 @@ import UIKit
 
 @objc(ColorSelectionViewControllerDelegate)
 protocol ColorSelectionViewControllerDelegate {
-    optional func colorSelection(
-        sender: ColorSelectionViewController,
+    @objc optional func colorSelection(
+        _ sender: ColorSelectionViewController,
         selectedValue: String)
 }
 
@@ -29,36 +29,36 @@ class ColorSelectionViewController : UITableViewController {
     // Initialize the tableview
     override init(style: UITableViewStyle) {
         super.init(style: style)
-        tableView.registerClass(UITableViewCell.classForCoder(),
+        tableView.register(UITableViewCell.classForCoder(),
                 forCellReuseIdentifier: tableviewCellIdentifier)
         title = "Choose Color"
     }
     
     // We only have three choices, but there's no reason this tableview can't be populated
     // dynamically from CoreData, NSDefaults, or something else.
-    override func tableView(tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
+    override func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
         return 3
     }
     
     // This just populates each row in the table, and if we've selected it, we'll check it
-    override func tableView(tableView: UITableView, cellForRowAtIndexPath indexPath: NSIndexPath) -> UITableViewCell {
-        let cell = tableView.dequeueReusableCellWithIdentifier(
-            tableviewCellIdentifier,
-            forIndexPath: indexPath) as UITableViewCell
+    override func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
+        let cell = tableView.dequeueReusableCell(
+            withIdentifier: tableviewCellIdentifier,
+            for: indexPath) as UITableViewCell
         
         let text = colorSelections[indexPath.row] 
         cell.textLabel!.text = text
         
         if text == selectedColorName {
-            cell.accessoryType = .Checkmark
+            cell.accessoryType = .checkmark
         } else {
-            cell.accessoryType = .None
+            cell.accessoryType = .none
         }
         return cell
     }
     
     // Save the value the user picks
-    override func tableView(tableView: UITableView, didSelectRowAtIndexPath indexPath: NSIndexPath) {
+    override func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
         if let theDelegate = delegate {
             selectedColorName = colorSelections[indexPath.row]
             theDelegate.colorSelection!(self, selectedValue: selectedColorName)
