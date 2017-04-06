@@ -1,4 +1,4 @@
-# Building a iOS 9 Share Extension with Swift 3.1
+# Building a iOS 10 Share Extension with Swift 3.1
 
 The purpose of this repository is to supplement the "Building a iOS 9 Share Extension with Swift 2.0" video with code, and to provide a simple starting point for building Share Extensions for yous apps. The original video was created using Swift 2.0, but the code is updated for Swift 3.1.
 
